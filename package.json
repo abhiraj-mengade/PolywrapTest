@@ -1,70 +1,24 @@
 {
-  "name": "ic-wall",
-  "version": "0.0.21",
+  "name": "connect-wallet-button",
+  "version": "0.1.0",
   "private": true,
-  "description": "Use Metamask to login to Internet Computer. Then, write on the wall!",
-  "author": {
-    "name": "Kristofer Lund",
-    "email": "kristofer@fmckl.se",
-    "url": "https://github.com/kristoferlund"
-  },
-  "license": "MIT",
-  "dependencies": {
-    "@craco/craco": "^6.2.0",
-    "@dfinity/agent": "^0.10.0",
-    "@dfinity/candid": "^0.10.0",
-    "@dfinity/identity": "^0.10.0",
-    "@dfinity/principal": "^0.10.0",
-    "@tailwindcss/forms": "^0.2.1",
-    "@types/node": "^16.7.2",
-    "@types/react-dom": "^17.0.9",
-    "@ukstv/jazzicon-react": "^1.0.0",
-    "@web3-react/core": "latest",
-    "@web3-react/injected-connector": "latest",
-    "date-fns": "^2.23.0",
-    "ethers": "^5.1.4",
-    "linkify-react": "^3.0.1",
-    "linkifyjs": "^3.0.1",
-    "react": "^17.0.2",
-    "react-bottom-scroll-listener": "^5.0.0",
-    "react-dom": "^17.0.2",
-    "react-hot-toast": "^2.0.0",
-    "react-router-dom": "^5.2.1",
-    "react-scripts": "4.0.3",
-    "recoil": "^0.4.1"
-  },
   "scripts": {
-    "start": "make copy_dfx_generated & TAILWIND_MODE=watch craco start",
-    "build": "make copy_dfx_generated & craco build",
-    "test": "craco test",
-    "eject": "react-scripts eject"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "dependencies": {
+    "@thirdweb-dev/react": "^3",
+    "@thirdweb-dev/sdk": "^3",
+    "ethers": "^5.7.2",
+    "next": "^13",
+    "prism-react-renderer": "^1.3.5",
+    "react": "^18.2",
+    "react-dom": "^18.2"
   },
   "devDependencies": {
-    "@types/linkifyjs": "^2.1.3",
-    "@types/react": "^17.0.19",
-    "@types/react-router-dom": "^5.1.8",
-    "autoprefixer": "^9.8.6",
-    "craco-alias": "^3.0.1",
-    "postcss": "^7.0.36",
-    "tailwindcss": "npm:@tailwindcss/postcss7-compat@^2.2.7",
-    "typescript": "^4.3.5"
+    "eslint": "8.29.0",
+    "eslint-config-next": "^13"
   }
 }
