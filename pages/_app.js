@@ -1,5 +1,4 @@
 import { ThirdwebProvider } from '@thirdweb-dev/react';
-import GithubTriangle from '../components/GithubTriangle';
 import Head from 'next/head';
 import '../styles/globals.css';
 
@@ -18,7 +17,6 @@ function MyApp({ Component, pageProps }) {
 				/>
 			</Head>
 			<Component {...pageProps} />
-			<GithubTriangle />
 		</ThirdwebProvider>
 	);
 }
